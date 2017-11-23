@@ -26,6 +26,11 @@
 		<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>128)); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->label($model,'admin'); ?>
+		<?php echo $form->textField($model,'admin'); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Search'); ?>
 	</div>

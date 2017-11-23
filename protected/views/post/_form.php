@@ -31,6 +31,19 @@
 		<?php echo $form->error($model,'content'); ?>
 	</div>
 
+	<div class="row">
+		<?php
+$this->widget('CStarRating',array(
+            'name'=>'rating_1',
+            'value'=>'4',
+            'minRating'=>1,
+            'maxRating'=>10,
+            'starCount'=>10,
+            ));
+?>
+	</div>
+
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>

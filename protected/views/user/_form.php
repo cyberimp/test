@@ -37,6 +37,12 @@
 		<?php echo $form->error($model,'email'); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->labelEx($model,'admin'); ?>
+		<?php echo $form->textField($model,'admin'); ?>
+		<?php echo $form->error($model,'admin'); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>

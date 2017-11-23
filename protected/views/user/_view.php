@@ -21,5 +21,9 @@
 	<?php echo CHtml::encode($data->email); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('admin')); ?>:</b>
+	<?php echo CHtml::encode($data->admin); ?>
+	<br />
+
 
 </div>
